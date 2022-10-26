@@ -7,11 +7,11 @@
 
 <div class="row">
     <div class="col-4 ">
-        <div class="card text-center mb-5 ml-5 fw-bold" style="width: 24rem; margin-left: 1rem">
+        <div class="card text-center mb-5 ml-10 fw-bold" style="width: 24rem; margin-left: 10rem">
             
     
             <div class="card-header text-center">
-                
+                Formulario
             </div>
             
     
@@ -31,10 +31,10 @@
     <div class="col-4">
         <div class="container col-md-12" > 
 
-            <div class="card text-center mb-5 fw-bold" style="width: 24rem; margin-left: 2rem">
+            <div class="card text-center mb-5 fw-bold" style="width: 24rem; margin-left: 20rem">
                 
                 <div class="card-header text-center">
-                
+                Tabla
                 </div>
                 
                 <div class="card-body">
