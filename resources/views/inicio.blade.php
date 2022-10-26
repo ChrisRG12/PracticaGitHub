@@ -38,7 +38,7 @@
                 </div>
                 
                 <div class="card-body">
-                    <table class="table">
+                    <table class="table table-success table-striped"">
                         <thead>
                           <tr>
                             <th scope="col">#</th>
