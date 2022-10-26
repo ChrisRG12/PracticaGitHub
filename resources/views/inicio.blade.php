@@ -13,15 +13,25 @@
             <div class="card-header text-center">
                 Formulario
             </div>
-            
+
+            <form method="POST" action="RegistrarUsu">
+              @csrf
     
             <div class="card-body">
+              <input type="text" class="form-control" placeholder="Usuario" name="txtUsu" value="{{ old('txtUsu') }}">
+
+               <input type="email" class="form-control" placeholder="Correo" name="txtCor" value="{{ old('txtCor') }}">
+
+               <input type="password" class="form-control" placeholder="Contraseña" name="txtcon" value="{{ old('txtcon') }}">
 
             </div>
     
     
     
             <div class="card-footer">
+              <button type="submit" class="btn btn-secondary  btn-lg">Guardar Usuario</button>
+
+            </form>
                
             </div>
     
