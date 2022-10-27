@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+//Importamos el controlador
+use App\Http\Controllers\controladorUsu;
+
 
 
 /* Creamos las rutas del archivo web que spon las que se van a dirigir a las funciones del controlador */
