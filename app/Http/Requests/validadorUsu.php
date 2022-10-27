@@ -26,7 +26,7 @@ class validadorUsu extends FormRequest
         return [
                 /*  Espesificamos los campos que se deben cumplir*/
             
-            'txtUsu' => 'required',
+            'txtU' => 'required',
             'txtcon' => 'required'
 
         ];

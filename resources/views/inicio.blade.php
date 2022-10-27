@@ -5,15 +5,12 @@
 
 <h1 class="aling-text center">Inicio</h1>
 
+
 @if ($errors->any())
 
 @foreach ($errors->all() as $error)
+            
   
-<div class="alert alert-primary alert-dismissible fade show" role="alert">
-  <strong> {{ $error }} </strong> 
-  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-</div>
-
 @endforeach  
 @endif
 
@@ -26,20 +23,21 @@
                 Formulario
             </div>
 
-            <form action="Registro" method="POST" >
+            <form action="{{ route('AProUS')}}" method="POST" >
               @csrf
     
             <div class="card-body">
 
               <label class="form-label"> Usuario: </label>
-              <input type="text" class="form-control" placeholder="Usuario" name="txtUsu" value="{{ old('txtUsu') }}">
-              <p class="text-secondary fst-Italic" style="text-align: left">{{ $errors->first(txtUsu)}}</p>
-
+              <input type="text" class="form-control" placeholder="Usuario" name="txtU" value="{{ old('txtU') }}">
+              <p class="text-primary fst-Italic">
+                {{ $errors->first('txtU') }} </p>
 
 
               <label class="form-label"> Contraseña: </label>
-               <input type="password" class="form-control" placeholder="Contraseña" name="txtcon" value="{{ old('txtcon') }}">
-               <p class="text-secondary fst-Italic" style="text-align: left">{{ $errors->first(txtcon)}}</p>
+               <input type="password" class="form-control" placeholder="Contraseña" name="txtcon" value="{{ old('txtcon') }}" >
+               <p class="text-primary fst-Italic">
+                {{ $errors->first('txtcon') }} </p>
             </div>
 
             <div class="card-footer">

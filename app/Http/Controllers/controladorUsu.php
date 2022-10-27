@@ -21,7 +21,7 @@ class controladorUsu extends Controller
       }
 
       //Creamos la funcion para procesar la peticion del formulario 
-      public function procesarUsu(request $req){ 
+      public function procesarUsu(validadorUsu $req){ 
         return view ('inicio');
       }
 
