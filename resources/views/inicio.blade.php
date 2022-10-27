@@ -5,6 +5,18 @@
 
 <h1 class="aling-text center">Inicio</h1>
 
+@if ($errors->any())
+
+@foreach ($errors->all() as $error)
+  
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+  <strong> {{ $error }} </strong> 
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+@endforeach  
+@endif
+
 <div class="row">
     <div class="col-4 ">
         <div class="card text-center mb-5 ml-10 fw-bold" style="width: 24rem; margin-left: 7rem">
