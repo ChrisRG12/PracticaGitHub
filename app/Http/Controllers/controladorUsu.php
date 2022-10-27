@@ -20,6 +20,10 @@ class controladorUsu extends Controller
         return view ('inicio');
       }
 
+      //Creamos la funcion para procesar la peticion del formulario 
+      public function procesarUsu(request $req){ 
+        return view ('inicio');
+      }
 
   
 }

@@ -12,6 +12,8 @@ Route::get('welcome', [controladorUsu::class, 'showWelcome']) -> name('ApoWe');
 
 Route::get('inicio', [controladorUsu::class, 'showinicio']) -> name('ApoIn');
 
+/* Creamos la ruta de metodo post que se dirige a la funcion de la peticion y la encarga de procesar al usuario */
+
 
 /*
 |--------------------------------------------------------------------------
