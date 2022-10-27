@@ -21,10 +21,13 @@
 
               <label class="form-label"> Usuario: </label>
               <input type="text" class="form-control" placeholder="Usuario" name="txtUsu" value="{{ old('txtUsu') }}">
-              
+              <p class="text-secondary fst-Italic" style="text-align: left">{{ $errors->first(txtUsu)}}</p>
+
+
+
               <label class="form-label"> Contraseña: </label>
                <input type="password" class="form-control" placeholder="Contraseña" name="txtcon" value="{{ old('txtcon') }}">
-
+               <p class="text-secondary fst-Italic" style="text-align: left">{{ $errors->first(txtcon)}}</p>
             </div>
 
             <div class="card-footer">
