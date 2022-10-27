@@ -2,6 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+
+/* Creamos las rutas del archivo web que spon las que se van a dirigir a las funciones del controlador */
+Route::get('welcome', [controladorUsu::class, 'showWelcome']) -> name('ApoWe');
+
+Route::get('inicio', [controladorUsu::class, 'showinicio']) -> name('ApoIn');
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/* 
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,3 +28,4 @@ Route::get('/', function () {
 Route::get('/inicio', function () {
     return view('inicio');
 });
+ */

@@ -18,15 +18,15 @@
               @csrf
     
             <div class="card-body">
-              
-              <input type="text" class="form-control" placeholder="Usuario" name="txtUsu" value="{{ old('txtUsu') }}">
 
+              <label class="form-label"> Usuario: </label>
+              <input type="text" class="form-control" placeholder="Usuario" name="txtUsu" value="{{ old('txtUsu') }}">
+              
+              <label class="form-label"> Contraseña: </label>
                <input type="password" class="form-control" placeholder="Contraseña" name="txtcon" value="{{ old('txtcon') }}">
 
             </div>
-    
-    
-    
+
             <div class="card-footer">
               <button type="submit" class="btn btn-secondary  btn-lg">Guardar Usuario</button>
 
