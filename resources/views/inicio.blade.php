@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-4 ">
-        <div class="card text-center mb-5 ml-10 fw-bold" style="width: 24rem; margin-left: 10rem">
+        <div class="card text-center mb-5 ml-10 fw-bold" style="width: 24rem; margin-left: 7rem">
             
     
             <div class="card-header text-center">
@@ -18,9 +18,8 @@
               @csrf
     
             <div class="card-body">
+              
               <input type="text" class="form-control" placeholder="Usuario" name="txtUsu" value="{{ old('txtUsu') }}">
-
-               <input type="email" class="form-control" placeholder="Correo" name="txtCor" value="{{ old('txtCor') }}">
 
                <input type="password" class="form-control" placeholder="Contraseña" name="txtcon" value="{{ old('txtcon') }}">
 
@@ -41,7 +40,7 @@
     <div class="col-4">
         <div class="container col-md-12" > 
 
-            <div class="card text-center mb-5 fw-bold" style="width: 34rem; margin-left: 20rem">
+            <div class="card text-center mb-5 fw-bold" style="width: 34rem; margin-left: 15rem">
                 
                 <div class="card-header text-center">
                 Tabla
