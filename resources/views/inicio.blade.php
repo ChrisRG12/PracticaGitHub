@@ -14,7 +14,7 @@
                 Formulario
             </div>
 
-            <form method="POST" action="RegistrarUsu">
+            <form action="ApoProUS" method="POST" >
               @csrf
     
             <div class="card-body">
